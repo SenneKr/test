@@ -1,0 +1,121 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  background-image: url(lunch-antwerpen-eilandje-2000x1175.jpg);
+  background-size: 4500px;
+  width: 500px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: #995F24;
+}
+
+/* ---- button ---- */
+
+.button {
+  margin-bottom: 10px;
+  background: #995F24;
+  border: none;
+  color: #1a1a1a;
+  font-family: helvetica;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px 0 10px 0;
+  border-right: 2px solid #1a1a1a;
+}
+
+.button:nth-child(1), .button:nth-child(4), .button:nth-child(7) {
+  border: none;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #1a1a1a;
+  color: #995F24;
+}
+
+/* ---- button-group ---- */
+
+.button-group {
+  width: 490px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  width: calc(100%/3);
+}
+
+/* ---- grid ---- */
+
+.grid {
+  max-width: 495px;
+  margin-top: 30px;
+  color: #1a1a1a;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.element-item {
+  float: left;
+  width: 490px;
+  background: #995F24;
+  margin-bottom: 10px;
+  padding: 5px 15px 0 15px;
+}
+
+.element-item h2 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: lighter;
+  line-height: 0px;
+}
+
+.element-item p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+#alles {
+  width: 490px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 90%;
+    margin: auto;
+  }
+
+  #alles {
+    width: 85vw;
+  }
+
+  .element-item {
+    width: 85vw;
+  }
+
+  .button-group {
+    width: 85vw;
+  }
+}
