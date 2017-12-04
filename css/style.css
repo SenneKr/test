@@ -16,8 +16,6 @@ h1 {
   color: #995F24;
 }
 
-/* ---- button ---- */
-
 .button {
   margin-bottom: 10px;
   background: #995F24;
@@ -40,8 +38,6 @@ h1 {
   color: #995F24;
 }
 
-/* ---- button-group ---- */
-
 .button-group {
   width: 490px;
   display: flex;
@@ -59,22 +55,17 @@ h1 {
   width: calc(100%/3);
 }
 
-/* ---- grid ---- */
-
 .grid {
   max-width: 495px;
   margin-top: 30px;
   color: #1a1a1a;
 }
 
-/* clear fix */
 .grid:after {
   content: '';
   display: block;
   clear: both;
 }
-
-/* ---- .grid-item ---- */
 
 .element-item {
   float: left;
